@@ -2,8 +2,8 @@
 // Licensed under the MIT License.
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Identity.Json;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Microsoft.Identity.Client.Internal
 {

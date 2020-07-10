@@ -12,7 +12,7 @@ using Microsoft.Identity.Client.Cache.Items;
 using Microsoft.Identity.Client.Internal;
 using Microsoft.Identity.Client.OAuth2;
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace Microsoft.Identity.Client.AuthScheme.PoP
 {
@@ -78,7 +78,7 @@ namespace Microsoft.Identity.Client.AuthScheme.PoP
                 new JProperty(PoPClaimTypes.Cnf, new JObject(
                     new JProperty(PoPClaimTypes.JWK, popAssertion))));
 
-            string popToken =  CreateJWS(payload.ToString(Json.Formatting.None), header.ToString(Json.Formatting.None));
+            string popToken =  CreateJWS(payload.ToString(Newtonsoft.Json.Formatting.None), header.ToString(Newtonsoft.Json.Formatting.None));
 
             // For POP, we can also update the HttpRequest with the authentication header
             _httpRequestMessage.Headers.Authorization = new AuthenticationHeaderValue(
@@ -92,7 +92,9 @@ namespace Microsoft.Identity.Client.AuthScheme.PoP
         {
             // Guid with no hyphens
 #if NETSTANDARD || WINDOWS_APP
+#pragma warning disable CA1305 // Specify IFormatProvider
             return Guid.NewGuid().ToString("N");
+#pragma warning restore CA1305 // Specify IFormatProvider
 #else
             return Guid.NewGuid().ToString("N", CultureInfo.InvariantCulture);
 #endif

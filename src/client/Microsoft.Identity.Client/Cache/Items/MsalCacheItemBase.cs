@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace Microsoft.Identity.Client.Cache.Items
 {

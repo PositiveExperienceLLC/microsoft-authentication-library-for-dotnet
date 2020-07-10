@@ -1,5 +1,7 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
-
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
   <PropertyGroup>
     <DefineConstants>$(DefineConstants);RUNTIME</DefineConstants>
   </PropertyGroup>
@@ -24,6 +26,11 @@
   <PropertyGroup Condition="'$(TargetFramework)' == '$(TargetFrameworkNetStandard)'">
     <DefineConstants>$(DefineConstants);NETSTANDARD_RUNTIME</DefineConstants>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>External\Newtonsoft.json\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <ItemGroup>
     <ReferenceAssemblyProjectReference Include="..\Microsoft.Identity.Client.Ref\Microsoft.Identity.Client.Ref.csproj" />
   </ItemGroup>

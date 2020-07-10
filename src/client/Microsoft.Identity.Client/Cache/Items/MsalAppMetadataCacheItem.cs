@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.Identity.Client.Cache.Keys;
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace Microsoft.Identity.Client.Cache.Items
 {

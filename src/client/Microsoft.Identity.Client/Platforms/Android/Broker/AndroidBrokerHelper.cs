@@ -17,7 +17,7 @@ using Signature = Android.Content.PM.Signature;
 using Microsoft.Identity.Client.Core;
 using Microsoft.Identity.Client.Internal.Broker;
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 
 namespace Microsoft.Identity.Client.Platforms.Android.Broker

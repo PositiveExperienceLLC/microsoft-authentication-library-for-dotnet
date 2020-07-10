@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Identity.Client;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
 

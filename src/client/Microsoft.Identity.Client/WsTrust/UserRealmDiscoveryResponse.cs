@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 using System;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json;
 
 namespace Microsoft.Identity.Client.WsTrust
 {

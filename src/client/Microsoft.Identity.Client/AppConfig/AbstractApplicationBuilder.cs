@@ -11,7 +11,7 @@ using Microsoft.Identity.Client.Http;
 using Microsoft.Identity.Client.Instance.Discovery;
 using Microsoft.Identity.Client.PlatformsCommon.Interfaces;
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json;
 
 namespace Microsoft.Identity.Client
 {

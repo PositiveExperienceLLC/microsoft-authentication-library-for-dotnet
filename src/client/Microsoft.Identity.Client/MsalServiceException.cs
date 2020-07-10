@@ -5,7 +5,7 @@ using System;
 using System.Globalization;
 using System.Net.Http.Headers;
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace Microsoft.Identity.Client
 {

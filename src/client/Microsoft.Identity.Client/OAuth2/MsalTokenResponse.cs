@@ -6,8 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Microsoft.Identity.Client.Internal.Broker;
-using Microsoft.Identity.Json;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Microsoft.Identity.Client.OAuth2
 {

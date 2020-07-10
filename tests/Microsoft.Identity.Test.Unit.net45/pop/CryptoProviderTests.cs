@@ -5,7 +5,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.Identity.Client.Platforms.net45;
-using Microsoft.Identity.Json.Linq;
+using Newtonsoft.Json.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Microsoft.Identity.Test.Unit.PoP

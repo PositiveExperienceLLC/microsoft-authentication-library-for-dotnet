@@ -26,7 +26,7 @@ namespace Microsoft.Identity.Client.WsTrust
 
             var output = new char[secureString.Length];
 
-            IntPtr secureStringPtr = SecureStringToCoTaskMemUnicode(secureString);
+            IntPtr secureStringPtr = System.Security.SecureStringMarshal.SecureStringToCoTaskMemUnicode(secureString);
             for (int i = 0; i < secureString.Length; i++)
             {
                 output[i] = (char)ReadInt16(secureStringPtr, i * 2);

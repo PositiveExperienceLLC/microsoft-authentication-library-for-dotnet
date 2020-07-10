@@ -9,7 +9,7 @@ using Microsoft.Identity.Client.ApiConfig.Parameters;
 using Microsoft.Identity.Client.Internal;
 using Microsoft.Identity.Client.Internal.Requests;
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json;
 
 namespace Microsoft.Identity.Client.Platforms.Android.Broker
 {

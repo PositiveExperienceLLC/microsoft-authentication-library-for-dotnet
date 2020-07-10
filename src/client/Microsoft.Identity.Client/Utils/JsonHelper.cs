@@ -4,7 +4,7 @@
 using System.IO;
 using System.Text;
 using Microsoft.Identity.Client.Internal;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json;
 
 namespace Microsoft.Identity.Client.Utils
 {

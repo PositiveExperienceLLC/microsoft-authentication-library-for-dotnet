@@ -7,8 +7,8 @@ using System.Text;
 using System.Linq;
 using Microsoft.Identity.Client.PlatformsCommon.Interfaces;
 using Microsoft.Identity.Client.Utils;
-using Microsoft.Identity.Json.Linq;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace Microsoft.Identity.Client.Internal
 {

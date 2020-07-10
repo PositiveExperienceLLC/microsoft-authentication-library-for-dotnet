@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using Microsoft.Identity.Client.OAuth2;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json;
 
 namespace Microsoft.Identity.Client.Instance.Validation
 {

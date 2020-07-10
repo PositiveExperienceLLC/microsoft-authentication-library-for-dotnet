@@ -14,7 +14,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Identity.Client.Instance.Discovery;
 using Microsoft.Identity.Client.TelemetryCore.Internal;
-using Microsoft.Identity.Json;
+using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 using Microsoft.Identity.Client.Internal;
 
